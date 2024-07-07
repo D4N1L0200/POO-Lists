@@ -1,35 +1,17 @@
-"""A classe deve ter um atributo raio para armazenar a dimensão da figura e
-métodos para calcular sua área e sua circunferência.
-Escrever um programa para testar a classe."""
-
 from math import pi
 
 
 class Circle:
-    """Class to represent a circle."""
+    def __init__(self, radius):
+        self.radius = radius
 
-    def __init__(self, radius: float) -> None:
-        self.radius: float = radius
-
-    def calc_area(self) -> float:
-        """Returns the area of the circle."""
+    def calc_area(self):
         return pi * self.radius**2
 
-    def calc_circumference(self) -> float:
-        """Returns the circumference of the circle."""
+    def calc_circumference(self):
         return 2 * pi * self.radius
 
 
-def test_circle(radius: float) -> None:
-    """Test the Circle class."""
-    circle: Circle = Circle(radius)
-    print(f"Radius: {circle.radius}m")
-    print(f"Area: {circle.calc_area()}m²")
-    print(f"Circumference: {circle.calc_circumference()}m")
-    print("\n")
-
-
-if __name__ == "__main__":
-    test_circle(1)
-    test_circle(57)
-    test_circle(324)
+circle = Circle(3)
+print(f"A: {circle.calc_area():.2f}m²")  # A: 28.27m²
+print(f"C: {circle.calc_circumference():.2f}m")  # C: 18.85m
