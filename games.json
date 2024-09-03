@@ -1,0 +1,32 @@
+{
+    "1": {
+        "name": "God of War",
+        "company": "Capcom",
+        "date": "17/03/2007"
+    },
+    "2": {
+        "name": "God of War 2",
+        "company": "Capcom",
+        "date": "28/04/2013"
+    },
+    "3": {
+        "name": "God of War 3",
+        "company": "Capcom",
+        "date": "04/11/2010"
+    },
+    "4": {
+        "name": "Minecraft",
+        "company": "Mojang",
+        "date": "10/07/2010"
+    },
+    "5": {
+        "name": "Terraria",
+        "company": "ReLogic",
+        "date": "22/06/2004"
+    },
+    "6": {
+        "name": "Minecraft Legends",
+        "company": "Mojang",
+        "date": "06/02/2022"
+    }
+}

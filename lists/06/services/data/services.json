@@ -1,0 +1,14 @@
+{
+    "1": {
+        "description": "Restaurante",
+        "duration": 12,
+        "id": 1,
+        "value": 30.0
+    },
+    "2": {
+        "description": "Caio",
+        "duration": 1,
+        "id": 2,
+        "value": 0.3
+    }
+}

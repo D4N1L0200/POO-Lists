@@ -3,8 +3,7 @@
 
 using std::string;
 
-class Account
-{
+class Account {
 private:
     string name;
     int id;
@@ -13,8 +12,7 @@ private:
     static int next_id;
 
 public:
-    Account(string name)
-    {
+    Account(string name) {
         this->name = name;
         this->id = next_id;
         next_id++;
@@ -22,47 +20,38 @@ public:
     }
     ~Account() {}
 
-    void deposit(double amount)
-    {
-        if (amount > 0)
-        {
+    void deposit(double amount) {
+        if (amount > 0) {
             balance += amount;
         }
     }
 
-    void withdraw(double amount)
-    {
-        if (amount > 0 && amount <= balance)
-        {
+    void withdraw(double amount) {
+        if (amount > 0 && amount <= balance) {
             balance -= amount;
         }
     }
 
-    double get_balance()
-    {
+    double get_balance() {
         return balance;
     }
 
-    int get_id()
-    {
+    int get_id() {
         return id;
     }
 
-    string get_name()
-    {
+    string get_name() {
         return name;
     }
 };
 
-void show_account(Account account)
-{
+void show_account(Account account) {
     std::cout << account.get_name() << " (ID " << account.get_id() << "): R$" << account.get_balance() << std::endl;
 }
 
 int Account::next_id = 1;
 
-int main()
-{
+int main() {
     Account account("Del");
 
     show_account(account);
